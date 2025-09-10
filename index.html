@@ -3,23 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minun AI Sovellukseni</title>
+    <title>Mikko Helenius - AI Sovellus</title>
     <style>
-        /* Nämä tyylit poistavat reunukset ja varmistavat, että upotus täyttää koko selainikkunan */
-        body, html {
+        /* Yleiset sivun tyylit */
+        body {
+            font-family: sans-serif; /* Selkeä ja moderni fontti */
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Estää vierityspalkit */
+            padding: 20px;
+            background-color: #f4f4f4; /* Vaalea taustaväri */
+            color: #333; /* Tumma tekstin väri */
+            text-align: center; /* Keskitetään kaikki sisältö */
         }
+        
+        /* Säiliö, joka pitää sisällön siististi kasassa ja ei liian leveänä */
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Keskitetään säiliö sivulle */
+            background-color: #fff; /* Valkoinen tausta sisällölle */
+            padding: 30px;
+            border-radius: 8px; /* Pyöristetyt kulmat */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Hienovarjoinen varjostus */
+        }
+
+        /* AI-sovelluksen upotuksen tyyli */
         iframe {
-            border: none; /* Ei kehystä upotuksen ympärillä */
+            border: 1px solid #ddd; /* Hillitty reunus */
             width: 100%;
-            height: 100%;
+            height: 65vh; /* Korkeus on 65% näkymän korkeudesta */
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
+
+        /* Profiilikuvan tyyli */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Tekee kuvasta pyöreän */
+            object-fit: cover; /* Varmistaa, että kuva täyttää ympyrän siististi */
+            margin-top: 20px;
+            border: 3px solid #ddd;
+        }
+        
+        /* Yhteystietojen tyyli */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        
+        h1, h2 {
+            color: #111;
+        }
+
     </style>
 </head>
 <body>
-    <iframe src="https-osoite-google-ai-studiosta"></iframe>
+
+    <div class="container">
+        <header>
+            <h1>Tervetuloa!</h1>
+            <p>
+                Mikko Helenius - Tieteellinen asiantuntija, joka kiihdyttää kasvua datan ja tekoälyn avulla.
+            </p>
+        </header>
+
+        <iframe src="https-osoite-google-ai-studiosta"></iframe>
+
+        <footer>
+            <img src="kuva.jpg" alt="Kuva Mikosta" class="profile-image">
+            <h2>Yhteystiedot</h2>
+            <p class="contact-info">
+                Sähköposti: <a href="mailto:mikko@mikkohelenius.fi">mikko@mikkohelenius.fi</a>
+            </p>
+        </footer>
+    </div>
+
 </body>
 </html>
+
